@@ -1,15 +1,6 @@
-from clases import *
-from utils import *
+# Archivo el cual se tiene que ejecutar para que sirva el aplicativo
+from src.utils import *
 
-# Declarar a la constante de manager
-MANAGER = TaskManager()
-task = userCreationTask()
-
-MANAGER.add_task(task)
-
-
-completeTask(MANAGER)
-print('')
-MANAGER.list_tasks()
-# manager.find_task("Pay bills")
-
+# Con este comando ejectuta el aplicativo
+if __name__ == '__main__':
+    run()
